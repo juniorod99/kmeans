@@ -48,8 +48,6 @@ class Cluster:
             new_center_y = sum_y / num_points
             self.center = Point(new_center_x, new_center_y)
 
-        
-
     def __str__(self):
         return f'Centroid {self.id} \nCentro: {self.center}\nPontos: {", ".join(map(str, self.points))}\n'
     
@@ -138,12 +136,6 @@ class KMeans:
 k_means = KMeans(qtdCentroids = 2)
 
 # Adicionando pontos
-# k_means.addPonto(1, 1)
-# k_means.addPonto(1, 2)
-# k_means.addPonto(2, 3)
-# k_means.addPonto(4, 5)
-# k_means.addPonto(5, 6)
-# k_means.addPonto(6, 6)
 k_means.addPonto(1, 1)
 k_means.addPonto(9.4, 6.4)
 k_means.addPonto(2.5, 2.1)
